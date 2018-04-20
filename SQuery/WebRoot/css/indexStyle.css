@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 楷体;
+    src:url('../fonts/kaiti.ttf'); /* IE9 */
+}
+body{
+    padding-top: 80px;
+    padding-bottom: 40px;
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size:100% auto;
+}
+.top-nav{
+    position: fixed;
+    top:0;
+}
+.top-nav .back{
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    font-size: 18px;
+}
+
+.link-btn{
+    width: 100%;
+    height: 50px;
+    background-color: #01a5ed;
+    color: #fff;
+    font-size: 25px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 80px;
+    letter-spacing: 10px;
+    font-family: 楷体;
+}
+a:hover{
+    text-decoration: none;
+}
+.title{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin: 40px auto 40px;
+}
+.title span{
+    font-size: 35px;
+    text-shadow: -1px -1px 1px #fff;
+    line-height: 50px;
+    font-family: 楷体;
+    color: #01a5ed;
+}
+.form-group{
+    margin: 0;
+}
+#snum{
+    font-size: 16px;
+    border: 1px #01a5ed solid;
+    height: 40px;
+    margin-right: 0;
+    width: 100%;
+}
+#submit{
+    height: 40px;
+    margin-left: 0;
+    font-size: 18px;
+    width: 100%;
+    color: #fff;
+    background-color: #01a5ed;
+}
+table{
+    margin-top: 30px;
+}
+table tr td{
+    border: 1px solid #eee;
+}
+table tr td:first-child{
+    margin-left: 0;
+    padding-left: 10px;
+    color: #000;
+    font-weight: bolder;
+    width: 40%;
+}
+.footer{
+    text-align: center;
+    width: 100%;
+    background-color: #fff;
+    height: 40px;
+    line-height: 40px;
+    color: #555;
+    position: fixed;
+    bottom: 0;
+    border-bottom: 3px solid #01a5ed;
+}
+.footer img{
+    display: inline;
+    width: 30px;
+    height: auto;
+}
+table tr .chack-btn{
+    text-align: center;
+}
+table tr .chack-btn button{
+    display: inline-block;
+    margin: 10px 5% 0;
+}
+/*@media screen and (max-width: 350px) {
+    body {
+        background-size: auto 100%;
+        padding-top: 60px;
+    }
+    .top-nav .back{
+        top: 20px;
+    }
+}*/

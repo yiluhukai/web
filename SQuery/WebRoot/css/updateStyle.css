@@ -1,0 +1,50 @@
+
+body{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-image: url("../images/bg2.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+}
+
+.update-file{
+    width: 600px;
+    height: 50px;
+    margin: 50px auto;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-align: center;
+}
+.update-file form{
+    display: inline;
+    line-height: 50px;
+}
+.update-file input{
+    width: 400px;
+}
+.update-file button{
+    display: inline;
+    position: relative;
+    left: 10px;
+    width: 100px;
+    height: 35px;
+    background-color: #01a5ed;
+    color: #fff;
+    font-size: 18px;
+    border: solid 1px #01a5ed;
+    border-radius: 5px;
+}
+.title{
+    width: 600px;
+    height: 50px;
+    margin: 150px auto 100px;
+    text-align: center;
+    color:  #fff;
+    font-size: 35px;
+    text-shadow: -2px -2px 2px #008cdb;
+    line-height: 50px;
+}

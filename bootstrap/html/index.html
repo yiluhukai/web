@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/demo.css">
+    <script src="../js/jquery-3.3.1.min.js" type="text/javascript">
+    </script>
+    <script src="../js/demo.js"></script>
+    <script src="../js/bootstrap.js" type="text/javascript">
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid navbar-fixed-top">
+        <div class="row top_nav bg-primary">
+            <div class="col-md-8 col-sm-8 z">
+                <div class="left_btn btn-group" role="group" aria-label="...">
+                    <a href="#" type="button" class="btn btn-info">模型管理</a>
+                    <a href="#" type="button" class="btn btn-info">log解析</a>
+                    <a href="#" type="button" class="btn btn-info">Txt解析</a>
+                    <a href="#" type="button" class="btn btn-info">旧库映射</a>
+                    <a href="#" type="button" class="btn btn-info">数据库配置</a>
+                    <a href="#" type="button" class="btn btn-info">运行</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 z">
+                <div class="right_btn btn-group" role="group" aria-label="...">
+                    <a href="#" type="button" class="btn btn-info">导入</a>
+                    <a href="#" type="button" class="btn btn-info">新建案例</a>
+                    <a href="#" type="button" class="btn btn-info">更新文件树模型</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="btn-group left_bottom_nav" role="group" aria-label="...">
+                <a href="./add_case.html" type="button" class="btn btn-default" target="myframe">新建txt案例</a>
+                <a href="#" type="button" class="btn btn-default">修改txt案例</a>
+                <a href="./query_case.html" type="button" class="btn btn-default" target="myframe">查询txt案例</a>
+                <a href="#" type="button" class="btn btn-default">删除txt案例</a>
+                <a href="#" type="button" class="btn btn-default">更新文件模型树</a>
+                <a href="#" type="button" class="btn btn-default">导入</a>
+            </div>
+            <div class="btn-group left_bottom_nav" role="group" aria-label="...">
+                <a href="#" type="button" class="btn btn-default">新建txt案例1</a>
+                <a href="#" type="button" class="btn btn-default">修改txt案例</a>
+                <a href="#" type="button" class="btn btn-default">查询txt案例</a>
+                <a href="#" type="button" class="btn btn-default">删除txt案例</a>
+                <a href="#" type="button" class="btn btn-default">更新文件模型树</a>
+                <a href="#" type="button" class="btn btn-default">导入</a>
+            </div>
+            <div class="btn-group left_bottom_nav" role="group" aria-label="...">
+                <a href="#" type="button" class="btn btn-default">新建txt案例w</a>
+                <a href="#" type="button" class="btn btn-default">修改txt案例</a>
+                <a href="#" type="button" class="btn btn-default">查询txt案例</a>
+                <a href="#" type="button" class="btn btn-default">删除txt案例</a>
+                <a href="#" type="button" class="btn btn-default">更新文件模型树</a>
+                <a href="#" type="button" class="btn btn-default">导入</a>
+            </div>
+            <div class="btn-group left_bottom_nav" role="group" aria-label="...">
+                <a href="#" type="button" class="btn btn-default">新建txt案例3</a>
+                <a href="#" type="button" class="btn btn-default">修改txt案例</a>
+                <a href="#" type="button" class="btn btn-default">查询txt案例</a>
+                <a href="#" type="button" class="btn btn-default">删除txt案例</a>
+                <a href="#" type="button" class="btn btn-default">更新文件模型树</a>
+                <a href="#" type="button" class="btn btn-default">导入</a>
+            </div>
+            <div class="btn-group left_bottom_nav" role="group" aria-label="...">
+                <a href="#" type="button" class="btn btn-default">新建txt案例4</a>
+                <a href="#" type="button" class="btn btn-default">修改txt案例</a>
+                <a href="#" type="button" class="btn btn-default">查询txt案例</a>
+                <a href="#" type="button" class="btn btn-default">删除txt案例</a>
+                <a href="#" type="button" class="btn btn-default">更新文件模型树</a>
+                <a href="#" type="button" class="btn btn-default">导入</a>
+            </div>
+            <div class="btn-group left_bottom_nav" role="group" aria-label="...">
+                <a href="#" type="button" class="btn btn-default">新建txt案例5</a>
+                <a href="#" type="button" class="btn btn-default">修改txt案例</a>
+                <a href="#" type="button" class="btn btn-default">查询txt案例</a>
+                <a href="#" type="button" class="btn btn-default">删除txt案例</a>
+                <a href="#" type="button" class="btn btn-default">更新文件模型树</a>
+                <a href="#" type="button" class="btn btn-default">导入</a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" id="aaa">
+            <div class="col-md-3 col-sm-3 left_nav bg-primary">
+                <div class="left_list ">
+                    <p class="control">
+                        <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                    </p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <input type="checkbox" name="all_select" id="all_select">
+                            <label for="all_select">全选</label>
+                        </li>
+
+                        <li class="first_item">
+                            <input type="checkbox" name="some_select">
+                            <a href="./" target="myframe">
+                                银行行业
+                            </a>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" name="one_select">
+                                    <a href="#">
+                                        台州银行
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" name="one_select">
+                                            <a href="#">
+                                                aaa
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="one_select">
+                                            <a href="#">
+                                                aaa
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="one_select">
+                                            <a href="#">
+                                                aaa
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="first_item">
+                            <input type="checkbox" name="some_select">
+                            <a href="./" target="myframe">
+                                银行行业
+                            </a>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" name="one_select">
+                                    <a href="#">
+                                        台州银行
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" name="one_select">
+                                            <a href="#">
+                                                aaa
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="one_select">
+                                            <a href="#">
+                                                aaa
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="one_select">
+                                            <a href="#">
+                                                aaa
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="first_item">
+                            <input type="checkbox" name="some_select">
+                            <a href="./" target="myframe">
+                                银行行业
+                            </a>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" name="one_select">
+                                    <a href="#">
+                                        台州银行
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" name="one_select">
+                                            <a href="#">
+                                                aaa
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="one_select">
+                                            <a href="#">
+                                                aaa
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="one_select">
+                                            <a href="#">
+                                                aaa
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="first_item">
+                            <input type="checkbox" name="some_select">
+                            <a href="./" target="myframe">
+                                银行行业
+                            </a>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" name="one_select">
+                                    <a href="#">
+                                        台州银行
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" name="one_select">
+                                            <a href="#">
+                                                aaa
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="one_select">
+                                            <a href="#">
+                                                aaa
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="one_select">
+                                            <a href="#">
+                                                aaa
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9  right_content col-md-offset-3 col-sm-12">
+                <div class="row myframe">
+                    <iframe src="./blog.html" frameborder="0" width="100%" height="700px" name="myframe" id="myframe" scrolling="auto">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <constant name="struts.devMode" value="false" />
+    <constant name="struts.multipart.maxSize" value="70485760"/>
+	<package name="SQuery" extends="struts-default" namespace="/">
+	<!-- 生命拦截器 -->
+	<interceptors>
+	   <interceptor name="privateInt" class="com.ljj.interceptor.PrivateInterceptor">
+	      <param name="excludeMethods">adminLogin,execute,scorequery</param>
+	   </interceptor>
+	   <interceptor-stack name="myStack">
+	       <interceptor-ref name="defaultStack"></interceptor-ref>
+	        <interceptor-ref name="privateInt"> 
+	        </interceptor-ref>       
+	   </interceptor-stack>
+	</interceptors>
+	
+	<!-- 首页的action -->
+	  <action name="index" class="indexAction">
+	     <result>/WEB-INF/pages/index.jsp</result>
+	  </action>
+	  <action name="admin" class="adminAction">
+	     <result name="login">/WEB-INF/pages/login.jsp</result>	 
+	  </action>
+	  <!-- 管理员action -->
+	  <action name="Admin_*" class="adminAction" method="{1}">
+	     <result name="input">/WEB-INF/pages/login.jsp</result>
+	     <result>/WEB-INF/pages/adminpage.jsp</result>
+	     <result name="importMessagePage">/WEB-INF/pages/importMessagePage.jsp</result>
+	     <result name="import">/WEB-INF/pages/importSuccess.jsp</result>
+	     <result name="exportMessagePage">/WEB-INF/pages/exportMessagePage.jsp</result>
+	     <result name="exportData" type="stream">/WEB-INF/pages/importSuccess.jsp
+	           <param name="contentType">${contentType}</param>
+	           <param name="contentDisposition">attachment;filename=${athleteFileName}</param>
+	           <param name="inputName">downloadFile</param>
+	     </result>
+	     <result name="scorequery">/WEB-INF/pages/ScoreQuery.jsp</result>	 
+	     <result name="importerror">/WEB-INF/pages/importMessagePage.jsp</result>
+	     <result name="error">/WEB-INF/pages/login.jsp</result>	 	     
+	     <interceptor-ref name="myStack">
+	           <param name="fileUpload.maximumSize">10097152</param>          
+	      </interceptor-ref>      
+	  </action>
+	  <action name="Student_*" class="StudentAction" method="{1}">
+	  </action>
+	</package>
+</struts>
